@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(nextSlide, 5000);
+    autoSlideInterval = setInterval(nextSlide, 10000);
   }
 
   nextBtn.addEventListener('click', () => {
@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Inicia o carrossel automaticamente
-  autoSlideInterval = setInterval(nextSlide, 5000);
+  autoSlideInterval = setInterval(nextSlide, 10000);
 });
