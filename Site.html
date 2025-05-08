@@ -7,41 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
-<script>
-  const slides = document.querySelectorAll('.carousel-slide');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-  const nextBtn = document.querySelector('.carousel-btn.next');
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      if (i === index) slide.classList.add('active');
-    });
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-  }
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  // auto slide
-  setInterval(nextSlide, 5000); // muda a cada 5s
-</script>
-
 <body>
 
-<header style="height: 80px; display: flex; align-items: center; background-color: #000; padding: 30px;">
-  <img src="logo.png" alt="Logo Eco Wash" style="height: 100%;">
+<header>
+  <img src="logo.png" alt="Logo Eco Wash">
   <nav>
     <a href="#" class="active">Home</a>
     <a href="#">Sobre</a>
@@ -60,8 +29,6 @@
     <button class="carousel-btn next">&#10095;</button>
   </div>
 </div>
-
-
 
 <section class="services">
   <div class="service-category">
@@ -94,9 +61,9 @@
 <section class="contact" id="contato">
   <h2>Fale Conosco</h2>
   <div class="contact-info">
-    <p><i class="fas fa-phone" style="color: #0cc0df;"></i> (11) 99999-8888</p>
-    <p><i class="fas fa-envelope" style="color: #0cc0df;"></i> contato@lavaexpress.com.br</p>
-    <p><i class="fas fa-map-marker-alt" style="color: #0cc0df;"></i> Rua Thadeu José de Moraes, 19-1 - Vila Nova Urupes, Suzano - SP</p>
+    <p><i class="fas fa-phone"></i> (11) 99999-8888</p>
+    <p><i class="fas fa-envelope"></i> contato@lavaexpress.com.br</p>
+    <p><i class="fas fa-map-marker-alt"></i> Rua Thadeu José de Moraes, 19-1 - Vila Nova Urupes, Suzano - SP</p>
   </div>
 
   <iframe 
@@ -112,5 +79,6 @@
   <p>&copy; 2025 Lava Rápido & Estacionamento - Todos os direitos reservados</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
