@@ -124,9 +124,6 @@ iframe {
   color: #0cc0df;
 }
 
-
-
-
 .servicos {
   padding: 60px 20px;
   background-color: #1b1b1b;
@@ -147,6 +144,10 @@ iframe {
   color: #0cc0df;
   font-size: 1.8rem;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact {
   text-align: center;
 }
 
