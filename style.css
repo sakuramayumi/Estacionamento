@@ -29,7 +29,7 @@ header {
 }
 
 header img {
-  height: 70px;
+  height: 50px;
 }
 
 nav a {
@@ -53,7 +53,7 @@ nav a.active {
 /* Hero Video */
 .hero-carousel {
   width: 100%;
-  height: 60vh;
+  height: 85vh;
   overflow: hidden;
   position: relative;
   margin-bottom: 40px;
@@ -123,7 +123,6 @@ section h2 {
   max-width: 400px;
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 14px rgba(12,192,223,0.3);
 }
 
 /* Serviços */
@@ -231,10 +230,15 @@ section h2 {
   font-size: 2.4rem;
 }
 
+.contact-adress {
+  display:flex;
+  justify-content: space-between;
+}
+
 .contact-info p {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #0cc0df;
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -274,6 +278,19 @@ footer p {
 }
 
 /* Responsividade */
+@media (max-width: 1300px) {
+  .sobre-imagem img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 16px;
+  }
+  .contact-adress {
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 768px) {
   .sobre-conteudo {
     flex-direction: column;
@@ -317,8 +334,7 @@ footer p {
   }
 
   header img {
-    height: 60px;
-    justify-content: center;
+    height: 50px;
   }
 
   h2{
